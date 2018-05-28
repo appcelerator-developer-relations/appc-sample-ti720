@@ -1,16 +1,17 @@
-function doClick(e) {
-	alert($.label.text);
-}
-
 $.getView().open();
 
+// check the status
 function checkStatus(){
-	var status = Ti.Analytics.getOptedOut();
-	Ti.API.info('status: ' + status);
-	if (status === true){
+	var optOut = Ti.Analytics.getOptedOut();
+
+	// send status to logs
+	Ti.API.info('status: ' + optOut);
+	if (optOut === true){
+		// optOut is true here
 		$.resetClass($.status, ['status_disabled']);
 		$.resetClass($.toggleButton, ['button_enable']);
 	} else {
+		// optOut is false or not defined, both reflect an optIn
 		$.resetClass($.status, ['status_enabled']);
 		$.resetClass($.toggleButton, ['button_disable']);
 	}
