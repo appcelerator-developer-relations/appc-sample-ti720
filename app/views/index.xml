@@ -1,0 +1,6 @@
+<Alloy>
+	<Window id="container">
+		<Label id="title">Analytics Status</Label>
+		<Label id="status"></Label>
+	</Window>
+</Alloy>
