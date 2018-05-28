@@ -1,10 +1,10 @@
 '#container': {
-	backgroundColor:"white",
+	backgroundColor:'white',
 	layout: 'vertical'
 }
 
 'Label': {
-	color: "#333333"
+	color: '#333333'
 }
 
 '#title': {
@@ -22,11 +22,29 @@
 	top: 20
 }
 
-".status_enabled": {
-	color: "#3e862d",
+'.status_enabled': {
+	color: '#3e862d',
 	text: 'Enabled'
 }
-".status_disabled": {
-	color: "#8e2f3c",
+'.status_disabled': {
+	color: '#8e2f3c',
 	text: 'Disabled'
+}
+
+'#toggleButton': {
+	color: '#ffffff',
+	top: 20,
+	height: 50,
+	width: 150,
+	borderRadius: 8
+}
+
+'.button_enable': {
+	title: 'Enable tracking',
+	backgroundColor: '#3e862d'
+}
+
+'.button_disable': {
+	title: 'Disable tracking',
+	backgroundColor: '#8e2f3c'
 }
