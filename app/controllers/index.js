@@ -2,7 +2,7 @@ $.getView().open();
 
 // check the status
 function checkStatus() {
-	var optOut = Ti.Analytics.getOptedOut();
+	let optOut = Ti.Analytics.getOptedOut();
 
 	// send status to logs
 	Ti.API.info('status: ' + optOut);
@@ -16,12 +16,12 @@ function checkStatus() {
 		$.resetClass($.toggleButton, ['button_disable']);
 	}
 
-	var result = Ti.Analytics.featureEvent('isActive', {active: optOut});
-	Ti.API.info('analytics result', result);
+	let result = Ti.Analytics.featureEvent('isActive', {active: optOut});
+	Ti.API.info('analytics result: ' + result);
 }
 
 function handleToggleOptoutButton() {
-	var status = Ti.Analytics.getOptedOut();
+	let status = Ti.Analytics.getOptedOut();
 
 	// inverse boolean value
 	Ti.Analytics.setOptedOut(!status);
