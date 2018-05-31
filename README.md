@@ -1,4 +1,4 @@
-# Sample app for TiSDK 7.2.0.GA
+# Sample app for Titianum SDK 7.2.0
 
 This sample is for showing how to let users opt out from Analytics, following the GDPR laws
 
