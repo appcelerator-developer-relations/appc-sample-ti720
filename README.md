@@ -24,7 +24,7 @@ to lint the source. You can lint the source yourself using `npm run lint`.
 
 ## Support
 
-Make sure to reach out to the [Titanium Slack community](http://tislack.org) for questions or file a [JIRA ticket](jira.appcelerator.org/issues/?filter=17433)
+Make sure to reach out to the [Titanium Slack community](http://tislack.org) for questions or file a [JIRA ticket](https://jira.appcelerator.org)
 if you run into any issues.
 
 ## Author
