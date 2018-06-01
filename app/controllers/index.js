@@ -1,12 +1,17 @@
-$.getView().open();
+/**
+ * Constructor, to be called after the initial window opened.
+ */
+(function () {
+	$.getView().open();
+}());
 
 // check the status
 function checkStatus() {
-	const optedOut = Ti.Analytics.getOptedOut();
+	const isOptedOut = Ti.Analytics.optedOut;
 
 	// send status to logs
-	Ti.API.info('status: ' + optedOut);
-	if (optedOut === true) {
+	Ti.API.info('Status: ' + isOptedOut);
+	if (isOptedOut === true) {
 		// optedOut is true here
 		$.resetClass($.status, [ 'status_disabled' ]);
 		$.resetClass($.toggleButton, [ 'button_enable' ]);
@@ -16,17 +21,14 @@ function checkStatus() {
 		$.resetClass($.toggleButton, [ 'button_disable' ]);
 	}
 
-	const result = Ti.Analytics.featureEvent('isActive', { active: optedOut });
-	Ti.API.info('analytics result: ' + result);
+	const result = Ti.Analytics.featureEvent('isActive', { active: isOptedOut });
+	Ti.API.info('Analytics result: ' + result);
 }
 
-function handleToggleOptoutButton() {
-	const status = Ti.Analytics.getOptedOut();
+function handleToggleOptOutButton() {
+	const isOptedOut = Ti.Analytics.optedOut;
 
-	// inverse boolean value
-	Ti.Analytics.setOptedOut(!status);
+	// Toogle opt status
+	Ti.Analytics.optedOut = !isOptedOut;
 	checkStatus();
 }
-
-// start app with checking status
-checkStatus();

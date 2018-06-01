@@ -1,0 +1,34 @@
+{
+  "name": "appc-sample-ti720",
+  "version": "1.0.0",
+  "description": "This app demonstrates the GDPR features in Titanium 7.2.0",
+  "main": "app/index.js",
+  "private": true,
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-config-axway": "^2.0.14",
+    "eslint-plugin-alloy": "^1.0.0"
+  },
+  "scripts": {
+    "lint": "eslint app",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/appcelerator-developer-relations/appc-sample-ti720.git"
+  },
+  "keywords": [
+    "appcelerator",
+    "alloy",
+    "titanium",
+    "gdpr",
+    "sample-app"
+  ],
+  "author": "Rene Pot",
+  "license": "SEE LICENSE IN \"LICENSE\"",
+  "bugs": {
+    "url": "https://github.com/appcelerator-developer-relations/appc-sample-ti720/issues"
+  },
+  "homepage": "https://github.com/appcelerator-developer-relations/appc-sample-ti720#readme"
+}
