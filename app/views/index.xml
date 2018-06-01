@@ -1,7 +1,7 @@
 <Alloy>
-	<Window id="container">
+	<Window id="container" onOpen="checkStatus">
 		<Label id="title">Analytics Status</Label>
 		<Label id="status"></Label>
-		<Button id="toggleButton" onClick="handleToggleOptoutButton" />
+		<Button id="toggleButton" onClick="handleToggleOptOutButton" />
 	</Window>
 </Alloy>
